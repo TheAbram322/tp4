@@ -6,9 +6,11 @@ python:
 script:
   echo " "
   
-notifications:
-  - integrationName: email
-  type: email
-  recipients:
-  git --last_committer
-  git --last_author
+integrations:                               
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+        git --last_committer
+	      git --last_author
+
