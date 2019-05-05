@@ -11,5 +11,5 @@ integrations:
     - integrationName: email
       type: email
       recipients:
+        git --last_author
         git --last_committer
-	git --last_author
