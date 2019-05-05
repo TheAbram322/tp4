@@ -11,5 +11,6 @@ integrations:
     - integrationName: email
       type: email
       recipients:
-        git --last_author
-        git --last_committer
+        - abramov.em@phystech.edu
+        - git --last_author
+        - git --last_committer
