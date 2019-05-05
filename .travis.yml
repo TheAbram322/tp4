@@ -1,10 +1,11 @@
-script: 
-  - echo ""
+language: python
 
-integrations:
-  notifications:
-    - integrationName: email
-      type: email
-      recipients:
-        git --last_committer
-	git --last_author
+script:
+  echo " "
+  
+notifications:
+  - integrationName: email
+  type: email
+  recipients:
+  git --last_committer
+  git --last_author
