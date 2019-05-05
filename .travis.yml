@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - "3.6"
+
+install:
+  - pip install unittest2
+
+script:
+  - python3 testingSystem.py
+  
+integrations:                               
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+        git --last_committer
+        git --last_author
