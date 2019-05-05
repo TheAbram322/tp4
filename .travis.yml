@@ -6,11 +6,11 @@ python:
 script:
   echo " "
   
-integrations:                               
-  notifications:
-    - integrationName: email
-      type: email
-      recipients:
-        - abramov.em@phystech.edu
-        - git --last_author
-        - git --last_committer
+notifications:
+  email:      
+    recipients:
+      - abramov.em@phystech.edu
+      - git --last_author
+      - git --last_committer
+  on_success: always
+  on_failure: always
