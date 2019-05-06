@@ -8,12 +8,3 @@ install:
 
 script:
   - python3 testingSystem.py
-  
-notifications:
-  email:      
-    recipients:
-      - abramov.em@phystech.edu
-      - git --last_author
-      - git --last_committer
-  on_success: always
-  on_failure: always
