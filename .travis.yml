@@ -6,11 +6,3 @@ python:
 script:
   echo " "
   
-notifications:
-  email:      
-    recipients:
-      - abramov.em@phystech.edu
-      - git --last_author
-      - git --last_committer
-  on_success: always
-  on_failure: always
